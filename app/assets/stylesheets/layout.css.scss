@@ -12,8 +12,13 @@
 .toucan-background {
     background-image: url(/assets/backgrounds/toucan_background.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-color: white;
     background-position: 50% center;
+}
+
+.grey-background {
+    background-color: $grey;
 }
 
 .button.is-primary.is-outlined {
