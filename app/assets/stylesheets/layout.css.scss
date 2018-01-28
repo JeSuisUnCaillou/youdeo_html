@@ -52,6 +52,26 @@
     margin-left: -60px;
 }
 
+.has-right-border {
+    border-right: 2px solid $red;
+}
+
+.feed-menu-item {
+    position: relative;
+}
+.feed-menu-item.is-active {
+    font-weight: bold;
+}
+
+.feed-menu-item.is-active::after {
+    content: "⚫";
+    color: $red;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    margin-left: -0.5em;
+}
+
 ////////////////////
 // SPACING CLASSES
 
