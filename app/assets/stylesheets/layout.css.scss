@@ -17,7 +17,11 @@
     background-position: 50% center;
 }
 
-.grey-background {
+.tuto-background {
+    background-image: url(/assets/backgrounds/tuto_background.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% top;
     background-color: $grey;
 }
 
@@ -53,4 +57,8 @@ $positions: ('top','left','bottom','right');
           padding-#{$position}: $size * $default_spacing + px;
       }
   }
+}
+
+.is-max-width-400 {
+    max-width: 400px;
 }
