@@ -1,0 +1,29 @@
+.hero-youdeo {
+    background-image: url(/assets/backgrounds/home_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% bottom;
+    .title, .subtitle {
+        color: white;
+    }
+    
+}
+
+$sizes: (0,1,2,3,4,5);
+$default_spacing: 15;
+$positions: ('top','left','bottom','right');
+
+@each $size in $sizes {
+  .is-margin-#{$size} {
+    margin: $size * $default_spacing + px;
+  }
+  .is-padding-#{$size} {
+    padding: $size * $default_spacing + px;
+  }
+  
+  @each $position in $positions {
+      .is-margin-#{$position}-#{$size} {
+          margin-#{$position}: $size * $default_spacing + px;
+      }
+  }
+}
