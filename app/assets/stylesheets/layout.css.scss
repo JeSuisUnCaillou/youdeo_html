@@ -9,6 +9,13 @@
     
 }
 
+.button.is-primary.is-outlined {
+    color: white;
+}
+
+////////////////////
+// SPACING CLASSES
+
 $sizes: (0,1,2,3,4,5);
 $default_spacing: 15;
 $positions: ('top','left','bottom','right');
