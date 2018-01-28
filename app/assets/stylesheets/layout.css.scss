@@ -9,8 +9,20 @@
     
 }
 
+.toucan-background {
+    background-image: url(/assets/backgrounds/toucan_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% center;
+}
+
 .button.is-primary.is-outlined {
     color: white;
+}
+
+.title.is-big-blue {
+    color: $blue;
+    font-size: 5rem;
 }
 
 ////////////////////
@@ -31,6 +43,9 @@ $positions: ('top','left','bottom','right');
   @each $position in $positions {
       .is-margin-#{$position}-#{$size} {
           margin-#{$position}: $size * $default_spacing + px;
+      }
+      .is-padding-#{$position}-#{$size} {
+          padding-#{$position}: $size * $default_spacing + px;
       }
   }
 }
