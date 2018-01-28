@@ -1,3 +1,7 @@
+.has-top-shadow {
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.2) inset;
+}
+
 .hero-youdeo {
     background-image: url(/assets/backgrounds/home_background.jpg);
     background-repeat: no-repeat;
@@ -25,6 +29,14 @@
     background-color: $grey;
 }
 
+.jungle-background {
+    background-image: url(/assets/backgrounds/jungle_background.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right top;
+    background-color: $grey;
+}
+
 .button.is-primary.is-outlined {
     color: white;
 }
@@ -32,6 +44,12 @@
 .title.is-big-blue {
     color: $blue;
     font-size: 5rem;
+}
+
+.offsetted-logo {
+    position: absolute;
+    margin-top: -100px;
+    margin-left: -60px;
 }
 
 ////////////////////
