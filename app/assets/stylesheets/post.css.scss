@@ -19,3 +19,32 @@
 .post-menu {
     
 }
+
+.post-center {
+    width: 100%;
+    position: relative;
+}
+
+.post-left-lane {
+    position: absolute;
+    width: 30px;
+    left: 5px;
+}
+
+.post-body {
+    padding-left: 20px;
+    margin-left: 20px;
+    margin-right: 40px;
+    border-left: 1px solid black;
+}
+.is-bold {
+    font-weight: bold;
+}
+
+.post-username {
+    
+}
+
+.post-video-user {
+    min-height: 48px;
+}

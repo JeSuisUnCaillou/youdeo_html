@@ -32,23 +32,27 @@
                 <h2 class="title is-1">YOUDEO, KEZAKO ?</h2>
             </div>
             
-            <div class="columns has-text-left is-padding-top-5">
-                <div class="column is-7">
-                    <h3 class="title is-big-blue is-size-1-mobile is-marginless">PEOPLE</h3>
-                    <div class="is-margin-left-2 is-max-width-400">Nous sommes passionnés par les créatrices et créateurs qui font des vidéos chaque jour.</div>
+            <div class="youdeo-container">
+                
+                <div class="columns has-text-left is-padding-top-5">
+                    <div class="column is-7">
+                        <h3 class="title is-big-blue is-size-1-mobile is-marginless">PEOPLE</h3>
+                        <div class="is-margin-left-2 is-max-width-400">Nous sommes passionnés par les créatrices et créateurs qui font des vidéos chaque jour.</div>
+                    </div>
                 </div>
-            </div>
-            <div class="columns has-text-right is-padding-top-5">
-                <div class="column is-7 is-offset-5">
-                    <h3 class="title is-big-blue is-size-1-mobile is-marginless">SHARING</h3>
-                    <div class="is-margin-right-2 is-pulled-right is-max-width-400">Nous partageons nos belles découvertes en misant sur la puissance du bouche à oreille.</div>
+                <div class="columns has-text-right is-padding-top-3">
+                    <div class="column is-7 is-offset-5">
+                        <h3 class="title is-big-blue is-size-1-mobile is-marginless">SHARING</h3>
+                        <div class="is-margin-right-2 is-pulled-right is-max-width-400">Nous partageons nos belles découvertes en misant sur la puissance du bouche à oreille.</div>
+                    </div>
                 </div>
-            </div>
-            <div class="columns has-text-left is-padding-top-5">
-                <div class="column is-7">
-                    <h3 class="title is-big-blue is-size-1-mobile is-marginless">VIDEOS</h3>
-                    <div class="is-margin-left-2 is-max-width-400">Nous faisons émerger des vidéos de qualité grâce aux recommandations de vrais humains.</div>
+                <div class="columns has-text-left is-padding-top-3">
+                    <div class="column is-7">
+                        <h3 class="title is-big-blue is-size-1-mobile is-marginless">VIDEOS</h3>
+                        <div class="is-margin-left-2 is-max-width-400">Nous faisons émerger des vidéos de qualité grâce aux recommandations de vrais humains.</div>
+                    </div>
                 </div>
+                
             </div>
             
             <div class="has-text-centered is-margin-top-5">
@@ -72,23 +76,27 @@
             <div class="is-max-width-400">En partageant la vidéo d’une créatrice ou d’un créateur, tu lui apportes soutien et visibilité.
             </div>
     
-            <div class="columns is-margin-top-3">
-                <div class="column is-3">
-                    1. Colle le lien d’une vidéo que tu veux faire découvrir
+            <div class="youdeo-container">
+                    
+                <div class="columns is-margin-top-3">
+                    <div class="column is-3">
+                        1. Colle le lien d’une vidéo que tu veux faire découvrir
+                    </div>
+                    <div class="column is-9">
+                        <img src="<%= asset_path "examples/post_example_1.jpg" %>" alt="post example 1">
+                    </div>
                 </div>
-                <div class="column is-9">
-                    <img src="<%= asset_path "examples/post_example_1.jpg" %>" alt="post example 1">
+                
+                <div class="columns is-margin-top-1">
+                    <div class="column is-3">
+                        2. Écris un commentaire pour donner envie de regarder la vidéo
+        
+                    </div>
+                    <div class="column is-9">
+                        <img src="<%= asset_path "examples/post_example_2.jpg" %>" alt="post example 1">
+                    </div>
                 </div>
-            </div>
-            
-            <div class="columns is-margin-top-1">
-                <div class="column is-3">
-                    2. Écris un commentaire pour donner envie de regarder la vidéo
-    
-                </div>
-                <div class="column is-9">
-                    <img src="<%= asset_path "examples/post_example_2.jpg" %>" alt="post example 1">
-                </div>
+                
             </div>
             
             <div class="has-text-centered is-margin-top-5">
@@ -125,8 +133,10 @@
                 Voici nos préférées parmis celles recommandées sur Youdeo.
             </div>
             
-            <div class="feed is-padding-right-1 is-padding-left-1">
-                <%= render partial: "home/post" %>
+            <div class="feed youdeo-container is-padding-right-1 is-padding-left-1 is-padding-top-1">
+                <% for i in 0..5 do %>
+                    <%= render partial: "home/post" %>
+                <% end %>
             </div>
         </div>
     </div>
