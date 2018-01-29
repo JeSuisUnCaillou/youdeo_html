@@ -11,10 +11,10 @@
           </div>
       </div>
       <div class="is-margin-top-2">
-        <a class="button is-primary is-rounded is-outlined is-large" href="">
+        <a class="button is-primary is-rounded is-outlined is-large is-margin-right-1 is-margin-bottom-1" href="">
             Découvrir
         </a>
-        <a class="button is-primary is-rounded is-large is-margin-left-2" href="">
+        <a class="button is-primary is-rounded is-large is-margin-right-1 is-margin-bottom-1" href="">
             Commencer
         </a>
       </div>
@@ -74,7 +74,7 @@
     
             <div class="columns is-margin-top-3">
                 <div class="column is-3">
-                    1. Colle le lien d’une vidéo que<br />tu veux faire découvrir
+                    1. Colle le lien d’une vidéo que tu veux faire découvrir
                 </div>
                 <div class="column is-9">
                     <img src="<%= asset_path "examples/post_example_1.jpg" %>" alt="post example 1">
@@ -83,7 +83,7 @@
             
             <div class="columns is-margin-top-1">
                 <div class="column is-3">
-                    2. Écris un commentaire pour<br />donner envie de regarder la vidéo
+                    2. Écris un commentaire pour donner envie de regarder la vidéo
     
                 </div>
                 <div class="column is-9">
@@ -105,10 +105,10 @@
         <div class="is-padding-left-1 is-padding-right-1">
             
             <div class="feed-menu has-text-centered">
-                <span class="feed-menu-item has-right-border inline-block is-padding-right-1 is-padding-left-1 is-active">
-                    SELECTION YOUDEO
+                <span class="feed-menu-item has-right-border is-padding-right-1 is-padding-left-1 is-active">
+                    SÉLECTION YOUDEO
                 </span>
-                <span class="feed-menu-item  inline-block is-padding-left-1 is-padding-right-1 is-active">
+                <span class="feed-menu-item is-padding-left-1 is-padding-right-1 is-active">
                     JUNGLE
                 </span>
             </div>
@@ -116,7 +116,7 @@
             <div class="is-margin-top-5">
                 <img class="offsetted-logo" src="<%= asset_path "logos/YOUDEO_LOGOICON_1-2.svg" %>" alt="YOUDEO" width="112">
                 <h2 class="title is-1">
-                    SELECTION<br />YOUDEO
+                    SÉLECTION<br />YOUDEO
                 </h2>    
             </div>
             
@@ -125,8 +125,8 @@
                 Voici nos préférées parmis celles recommandées sur Youdeo.
             </div>
             
-            <div class="">
-                
+            <div class="feed is-padding-right-1 is-padding-left-1">
+                <%= render partial: "home/post" %>
             </div>
         </div>
     </div>
