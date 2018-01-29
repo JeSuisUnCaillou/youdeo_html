@@ -1,11 +1,15 @@
-<div class="post box is-margin-bottom-1 is-margin-top-1">
+<% is_selection_youdeo ||= false %>
+
+<div class="post box is-margin-bottom-1 is-margin-top-1 <%= "is-selection-youdeo" if is_selection_youdeo %>">
     <div class="post-header has-text-centered">
         <div class="post-date is-pulled-left has-text-grey-light">Il y a 1 heure</div>
-        <div class="post-is-selection is-text-centered is-text-red"><i class="fa fa-star" aria-hidden="true"></i> Sélection Youdeo <i class="fa fa-star" aria-hidden="true"></i></div>
+        <% if is_selection_youdeo %>
+            <div class="post-is-selection is-text-centered is-text-red"><i class="fa fa-star" aria-hidden="true"></i> Sélection Youdeo <i class="fa fa-star" aria-hidden="true"></i></div>
+        <% end %>
         <div class="post-menu is-pulled-right">menu</div>
         <div class="is-clearfix"></div>
     </div>
-    <div class="post-center is-margin-top-1">
+    <div class="post-center">
         <div class="post-left-lane is-pulled-left is-margin-right-1 is-margin-top-1">
             <img src="https://avatars0.githubusercontent.com/u/6117264?s=40&v=4" alt="avatar" width="48" height="48">
         </div>
