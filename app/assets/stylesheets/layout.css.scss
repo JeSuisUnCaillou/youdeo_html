@@ -40,6 +40,14 @@ body {
     background-color: $grey;
 }
 
+.medal-background {
+    background-image: url(/assets/backgrounds/medal_background.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right top;
+    background-color: $grey;
+}
+
 .jungle-background {
     background-image: url(/assets/backgrounds/jungle_background.jpg);
     background-repeat: no-repeat;
