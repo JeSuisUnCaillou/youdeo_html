@@ -29,6 +29,7 @@
     position: absolute;
     width: 30px;
     left: 5px;
+    top: 5px;
 }
 
 .post-body {
@@ -36,9 +37,6 @@
     margin-left: 20px;
     margin-right: 40px;
     border-left: 1px solid black;
-}
-.is-bold {
-    font-weight: bold;
 }
 
 .post-username {

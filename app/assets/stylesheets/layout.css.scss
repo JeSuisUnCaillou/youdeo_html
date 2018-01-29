@@ -1,3 +1,15 @@
+body {
+    font-family: 'URW Geometric';
+}
+
+.is-bold {
+    font-weight: 900;
+}
+
+.is-phat {
+    font-size: 5rem;
+}
+
 .has-top-shadow {
     box-shadow: 0px 5px 5px rgba(0,0,0,0.2) inset;
 }
@@ -40,9 +52,8 @@
     color: white;
 }
 
-.title.is-big-blue {
+.title.is-blue {
     color: $blue;
-    font-size: 5rem;
 }
 
 .offsetted-logo {
